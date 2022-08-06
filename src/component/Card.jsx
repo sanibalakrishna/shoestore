@@ -5,7 +5,7 @@ import shoetwo from "../shoes/shoetwo.png";
 import shoethree from "../shoes/shoethree.png";
 import { ImSearch } from "react-icons/im";
 
-function Card() {
+function Card({ drawer }) {
   const sneakers = [shoeone, shoetwo, shoethree, shoefour];
   const [shoe, setShoe] = useState(shoeone);
 
@@ -23,6 +23,13 @@ function Card() {
           <ImSearch />
         </button>
       </div>
+      {drawer && (
+        <div className="absolute top-2 -left-28 flex flex-col bg-white rounded-lg w-48 ">
+          <button className="btn btn-ghost">Home</button>
+          <button className="btn btn-ghost">Account</button>
+          <button className="btn btn-ghost">Cart</button>
+        </div>
+      )}
       <div className="flex">
         {sneakers.map((item) => (
           <div

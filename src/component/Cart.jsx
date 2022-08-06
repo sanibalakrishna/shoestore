@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 import { GiShoppingBag } from "react-icons/gi";
 import Card from "./Card";
 
-function Cart() {
+function Cart({ drawer }) {
   const [size, setSize] = useState(true);
   const [guide, setGuide] = useState(false);
   const handleSize = () => {
@@ -17,7 +17,7 @@ function Cart() {
   return (
     <div className="flex w-full">
       <div className="w-3/5">
-        <Card />
+        <Card drawer={drawer} />
       </div>
       <div className="w-2/5 mt-5">
         <h1 className="text-zinc-600 text-4xl font-sans ">

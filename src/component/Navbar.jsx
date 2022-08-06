@@ -1,14 +1,15 @@
 import React from "react";
-import { GrMenu } from "react-icons/gr";
+import Drawer from "./Drawer";
+
 import { FaUser } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
 
-function Navbar() {
+function Navbar({ setDrawer }) {
   return (
     <div className="flex justify-around ">
       <div className="flex">
         <div className=" btn btn-ghost">
-          <GrMenu size={23} />
+          <Drawer setDrawer={setDrawer} />
         </div>
         <h1 className="btn btn-ghost normal-case text-xl">Constructor</h1>
       </div>
