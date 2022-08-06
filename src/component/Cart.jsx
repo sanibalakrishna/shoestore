@@ -20,8 +20,8 @@ function Cart() {
         <Card />
       </div>
       <div className="w-2/5 mt-5">
-        <h1 className="text-zinc-600 text-2xl font-sans ">
-          Nike <span className="text-3xl font-bold font-mono">Lebron</span> 16
+        <h1 className="text-zinc-600 text-4xl font-sans ">
+          Nike <span className="text-5xl font-bold font-mono">Lebron</span> 16
           Low
         </h1>
         <div className="flex mt-3">
@@ -77,7 +77,7 @@ function Cart() {
             <p className="text-3xl font-bold font-mono">$150</p>
           </div>
         </div>
-        <div className="grid grid-rows-2 grid-flow-col -ml-8 mt-3 w-3/4 text-zinc-600">
+        <div className="grid grid-rows-2 grid-flow-col  mt-3 w-3/4 text-zinc-600">
           <div className="btn btn-ghost">
             <h1>Description &nbsp;</h1>
             <HiArrowRight />
